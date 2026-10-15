@@ -1,0 +1,45 @@
+﻿/* ---------- 3. Layout, seÃ§Ãµes e cabeÃ§alhos ---------- */
+.wrap{
+  width:100%;
+  max-width:var(--wrap);
+  margin:0 auto;
+  padding-inline:20px;
+}
+.narrow{max-width:860px}
+
+.sec{position:relative;padding-block:clamp(64px,9vw,112px)}
+.sec-alt{background:var(--bg-2);border-block:1px solid var(--line)}
+
+.sec-head{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin-bottom:clamp(32px,4.5vw,52px);
+  max-width:700px;
+}
+.sec-head.center{align-items:center;text-align:center;margin-inline:auto}
+
+/* Etiqueta acima dos tÃ­tulos (estilo "GUIA PRÃTICO Â· RENDA EXTRA") */
+.label{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  align-self:flex-start;
+  font-size:.74rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:var(--neon-text);
+}
+.label::before{
+  content:"";
+  width:18px;height:2px;
+  border-radius:2px;
+  background:var(--neon);
+}
+.sec-head.center .label{align-self:center}
+
+h2{font-size:clamp(2.1rem,1.4rem + 3vw,3.6rem)}
+
+.lede{color:var(--muted);font-size:1.05rem;max-width:58ch}
+

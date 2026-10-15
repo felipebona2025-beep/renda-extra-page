@@ -1,0 +1,108 @@
+﻿/* ============================================================
+   RENDA EXTRA â€” 10 FORMAS DE COMEÃ‡AR A GANHAR DINHEIRO
+   Folha de estilo da pÃ¡gina de vendas Â· identidade do e-book 2.0
+   ------------------------------------------------------------
+   Identidade (igual ao e-book): fundo quase preto, verde neon
+   como destaque, roxo como secundÃ¡ria, tÃ­tulos condensados em
+   caixa alta (Anton), texto em Poppins, cÃ­rculos de linha fina,
+   brilhos verde/roxo e redes de pontos como elementos "tech".
+
+   SumÃ¡rio:
+   1.  Tokens (cores, fontes, medidas) + modo claro
+   2.  Reset e base
+   3.  Layout, seÃ§Ãµes e cabeÃ§alhos
+   4.  BotÃµes de CTA
+   5.  Prazo da oferta, topo e botÃ£o de tema
+   6.  Hero e mockup do e-book
+   7.  Faixa "mapa" (10 Â· 0 Â· 1)
+   8.  Veja por dentro (prÃ©vias + visualizador)
+   9.  O que vocÃª vai encontrar
+   10. As 10 oportunidades
+   11. NÃ£o Ã© sÃ³ teoria
+   12. Plano de 7 dias
+   13. BÃ´nus
+   14. Para quem Ã©
+   15. Sem promessas milagrosas
+   16. Oferta
+   17. Depoimentos (markup comentado no HTML)
+   18. Garantia
+   19. FAQ
+   20. CTA final e rodapÃ©
+   21. Barra fixa de compra
+   22. AnimaÃ§Ãµes de entrada
+   23. Acessibilidade
+   ============================================================ */
+
+/* ---------- 1. Tokens ---------- */
+/* Escuro Ã© o padrÃ£o (identidade do e-book). .force-dark mantÃ©m
+   alguns blocos escuros mesmo no modo claro (oferta, final, rodapÃ©). */
+:root,
+.force-dark{
+  --bg:#050507;
+  --bg-2:#0A0A0F;
+  --surface:#0F0F16;
+  --surface-2:#15151F;
+  --line:rgba(255,255,255,.09);
+  --line-strong:rgba(255,255,255,.18);
+  --ink:#FFFFFF;
+  --text:#E6E7EE;
+  --muted:#ABAFBE;           /* texto secundÃ¡rio: contraste ~9:1 sobre o fundo */
+
+  --neon:#46EB8E;            /* verde neon do e-book â€” aÃ§Ãµes principais */
+  --neon-hover:#2EDC7B;
+  --neon-ink:#03190C;        /* texto sobre o verde */
+  --neon-text:#5DF0A0;       /* verde para textos e Ã­cones */
+  --neon-soft:rgba(70,235,142,.12);
+  --neon-line:rgba(70,235,142,.35);
+
+  --purple:#8848C8;          /* roxo do e-book */
+  --purple-text:#B994FF;
+  --purple-soft:rgba(136,72,200,.18);
+  --purple-line:rgba(160,110,240,.4);
+
+  --shadow:0 30px 60px -30px rgba(0,0,0,.8);
+  --bar-bg:rgba(5,5,7,.9);
+  color-scheme:dark;
+}
+
+:root{
+  --display:"Anton","Impact","Arial Narrow",sans-serif;
+  --body:"Poppins","Segoe UI",Helvetica,Arial,sans-serif;
+  --wrap:1160px;
+  --r:20px;
+  --r-sm:14px;
+}
+
+/* Modo claro (botÃ£o do topo). Verde e roxo escurecidos para leitura. */
+:root[data-theme="light"]{
+  --bg:#F4F4F7;
+  --bg-2:#ECECF2;
+  --surface:#FFFFFF;
+  --surface-2:#F7F7FA;
+  --line:rgba(10,10,25,.1);
+  --line-strong:rgba(10,10,25,.2);
+  --ink:#0A0A12;
+  --text:#23242C;
+  --muted:#525665;
+
+  --neon-text:#087A42;
+  --neon-soft:rgba(16,170,90,.12);
+  --neon-line:rgba(16,150,80,.35);
+  --purple-text:#6A2EC2;
+  --purple-soft:rgba(120,56,184,.1);
+  --purple-line:rgba(120,56,184,.35);
+
+  --shadow:0 24px 50px -28px rgba(10,10,30,.35);
+  --bar-bg:rgba(255,255,255,.94);
+  color-scheme:light;
+}
+/* Blocos que continuam escuros no modo claro */
+:root[data-theme="light"] .force-dark{
+  --bg:#050507; --bg-2:#0A0A0F; --surface:#0F0F16; --surface-2:#15151F;
+  --line:rgba(255,255,255,.09); --line-strong:rgba(255,255,255,.18);
+  --ink:#FFFFFF; --text:#E6E7EE; --muted:#ABAFBE;
+  --neon-text:#5DF0A0; --neon-soft:rgba(70,235,142,.12); --neon-line:rgba(70,235,142,.35);
+  --purple-text:#B994FF; --purple-soft:rgba(136,72,200,.18); --purple-line:rgba(160,110,240,.4);
+  color-scheme:dark;
+}
+

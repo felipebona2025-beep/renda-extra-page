@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Atualize o domínio abaixo antes do deploy, caso a URL pública seja diferente.
+Sitemap: https://rendaextra10.vercel.app/sitemap.xml
